@@ -1,0 +1,25 @@
+{
+  "employees": [
+    {"id": 1, "name": "Alice Johnson", "skills": ["Python", "React", "AWS"], "experience_years": 5, "projects": ["E-commerce Platform", "Healthcare Dashboard"], "availability": "available"},
+    {"id": 2, "name": "Rahul Verma", "skills": ["Java", "Spring Boot", "Docker"], "experience_years": 4, "projects": ["Banking API", "Fraud Detection"], "availability": "available"},
+    {"id": 3, "name": "Sarah Chen", "skills": ["TensorFlow", "PyTorch", "Medical Imaging"], "experience_years": 6, "projects": ["Medical Diagnosis Platform"], "availability": "available"},
+    {"id": 4, "name": "Michael Rodriguez", "skills": ["Machine Learning", "Scikit-learn", "Pandas"], "experience_years": 4, "projects": ["Patient Risk Prediction System"], "availability": "not available"},
+    {"id": 5, "name": "Aman Kapoor", "skills": ["Node.js", "MongoDB", "React Native"], "experience_years": 3, "projects": ["Food Delivery App"], "availability": "available"},
+    {"id": 6, "name": "Linda Park", "skills": ["AWS", "Docker", "Kubernetes"], "experience_years": 5, "projects": ["Cloud Migration", "DevOps Setup"], "availability": "not available"},
+    {"id": 7, "name": "Jason Wu", "skills": ["Flask", "NLP", "OpenAI"], "experience_years": 2, "projects": ["Chatbot for Finance"], "availability": "available"},
+    {"id": 8, "name": "Sneha Reddy", "skills": ["HTML", "CSS", "JavaScript"], "experience_years": 1, "projects": ["Portfolio Website"], "availability": "available"},
+    {"id": 9, "name": "Carlos Mendez", "skills": ["JavaScript", "TypeScript", "Next.js"], "experience_years": 3, "projects": ["Real-time Analytics Dashboard"], "availability": "available"},
+    {"id": 10, "name": "Isha Mehta", "skills": ["Pandas", "Tableau", "SQL"], "experience_years": 2, "projects": ["Sales Dashboard", "Data Cleaning Scripts"], "availability": "available"},
+
+    {"id": 11, "name": "Zara Khan", "skills": ["Python", "Django", "PostgreSQL"], "experience_years": 4, "projects": ["Inventory Management System"], "availability": "available"},
+    {"id": 12, "name": "Rohan Iyer", "skills": ["C++", "Computer Vision", "OpenCV"], "experience_years": 5, "projects": ["Autonomous Vehicle Object Detection"], "availability": "available"},
+    {"id": 13, "name": "Emily Davis", "skills": ["Power BI", "SQL", "Data Visualization"], "experience_years": 3, "projects": ["Retail Analytics Dashboard"], "availability": "not available"},
+    {"id": 14, "name": "Tanmay Deshmukh", "skills": ["Go", "Microservices", "Docker"], "experience_years": 6, "projects": ["Billing System"], "availability": "available"},
+    {"id": 15, "name": "Anjali Nair", "skills": ["Java", "Kafka", "Redis"], "experience_years": 5, "projects": ["Order Processing Pipeline"], "availability": "available"},
+    {"id": 16, "name": "David Kim", "skills": ["Swift", "iOS", "Firebase"], "experience_years": 3, "projects": ["Fitness Tracker App"], "availability": "not available"},
+    {"id": 17, "name": "Neha Sharma", "skills": ["R", "Statistics", "Data Mining"], "experience_years": 4, "projects": ["Churn Prediction Model"], "availability": "available"},
+    {"id": 18, "name": "Mohit Bansal", "skills": ["Python", "FastAPI", "ElasticSearch"], "experience_years": 3, "projects": ["Log Monitoring Platform"], "availability": "available"},
+    {"id": 19, "name": "Priya Agarwal", "skills": ["ML", "NLP", "Transformers"], "experience_years": 5, "projects": ["Document Summarization Tool"], "availability": "available"},
+    {"id": 20, "name": "Leo Martin", "skills": ["PHP", "Laravel", "MySQL"], "experience_years": 4, "projects": ["CRM System"], "availability": "available"}
+  ]
+}
