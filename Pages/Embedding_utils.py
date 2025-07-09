@@ -1,11 +1,9 @@
 import os 
 import json
-from dotenv import load_dotenv
 from langchain.vectorstores import FAISS
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 
 
-load_dotenv()
 DATA_PATH = "data/employees.json"
 
 
