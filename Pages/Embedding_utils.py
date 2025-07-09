@@ -1,6 +1,5 @@
-import os 
 import json
-from langchain.vectorstores import FAISS
+from langchain_community.vectorstores import FAISS
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 
 
@@ -37,6 +36,7 @@ def generate_embeddings():
 
 # Search employees based on user query
 def search_similar_employees(query, k=3):
+    generate_embeddings()
     embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
     vector_store = FAISS.load_local("faiss_vector_embeddings", embeddings, allow_dangerous_deserialization=True)
 
