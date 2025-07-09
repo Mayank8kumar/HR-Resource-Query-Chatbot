@@ -6,7 +6,7 @@ from Embedding_utils import search_similar_employees
 load_dotenv()
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
-# ✅ Prompt builder
+# Prompt builder
 def build_prompt(query, docs):
     doc_text = "\n\n".join([doc.page_content for doc in docs])
 
@@ -44,13 +44,13 @@ If no match found:
 """
     return prompt
 
-# ✅ Call Gemini API to generate response
+# Call Gemini API to generate response
 def generate_response(prompt):
     model = genai.GenerativeModel("gemini-2.5-flash")
     response = model.generate_content(prompt)
     return response.text
 
-# ✅ Full pipeline: query → vector search → prompt → Gemini → response
+# Full pipeline: query → vector search → prompt → Gemini → response
 def run_pipeline(user_query):
     top_matches = search_similar_employees(user_query, k=3)
     prompt = build_prompt(user_query, top_matches)

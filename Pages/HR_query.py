@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 from Gemini_response import run_pipeline
 
-st.set_page_config(page_title="HR Query Chatbot", page_icon="🤖")
+st.set_page_config(page_title="HR Query Chatbot", page_icon="")
 st.title("🤖 HR Resource Chatbot")
 st.markdown("Ask about employees by skill, project, availability, etc.")
 
