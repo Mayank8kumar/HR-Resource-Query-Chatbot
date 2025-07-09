@@ -1,10 +1,12 @@
 import json
+import os
 from langchain_community.vectorstores import FAISS
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 
 
-DATA_PATH = "data/employees.json"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
+DATA_PATH = os.path.join(BASE_DIR, "./../data/employees.json")
 
 # Load the data 
 def load_employees():

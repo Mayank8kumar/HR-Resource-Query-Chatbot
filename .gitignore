@@ -18,7 +18,7 @@ venv/
 Thumbs.db
 
 # Vector embeddings
-faiss_vector_embeddings
+# faiss_vector_embeddings
 
 # Testing
 testing.py

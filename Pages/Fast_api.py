@@ -1,8 +1,8 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from typing import Optional
-from Pages.Embedding_utils import load_employees
-from Pages.Gemini_response import run_pipeline
+from Embedding_utils import load_employees
+from Gemini_response import run_pipeline
 
 app = FastAPI(title="HR Chatbot API", description="RAG-powered HR query backend")
 
@@ -38,6 +38,7 @@ def search_employees(
 @app.post("/chat", response_model=ChatResponse, summary="Ask HR chatbot a query")
 def chat_endpoint(payload: ChatRequest):
     try:
+        print(type(payload.query),payload.query)
         response = run_pipeline(payload.query)
         return ChatResponse(response=response)
     except Exception as e:
