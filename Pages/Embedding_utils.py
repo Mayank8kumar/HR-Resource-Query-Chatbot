@@ -7,6 +7,8 @@ from langchain_google_genai import GoogleGenerativeAIEmbeddings
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 DATA_PATH = os.path.join(BASE_DIR, "./../data/employees.json")
+OUTPUT_PATH = os.path.join(BASE_DIR, "../faiss_vector_embeddings")
+
 
 # Load the data 
 def load_employees():
@@ -32,7 +34,7 @@ def generate_embeddings():
     embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
     vector_store = FAISS.from_texts(employee_texts, embedding=embeddings)
 
-    vector_store.save_local("faiss_vector_embeddings")
+    vector_store.save_local(OUTPUT_PATH)
     # print("Embedding index created and saved locally.")
 
 
@@ -40,7 +42,7 @@ def generate_embeddings():
 def search_similar_employees(query, k=3):
     generate_embeddings()
     embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
-    vector_store = FAISS.load_local("faiss_vector_embeddings", embeddings, allow_dangerous_deserialization=True)
+    vector_store = FAISS.load_local(OUTPUT_PATH, embeddings, allow_dangerous_deserialization=True)
 
     results = vector_store.similarity_search(query, k=k)
     return results
