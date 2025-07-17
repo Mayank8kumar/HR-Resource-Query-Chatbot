@@ -87,7 +87,7 @@ cd Pages
 ### Step 2: Start the FastAPI backend
 
 ```bash
-uvicorn Fast_api:app --reload
+python -m uvicorn Fast_api:app --reload
 ```
 
 * Test at: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
@@ -96,7 +96,7 @@ uvicorn Fast_api:app --reload
 
 ```bash
 cd Pages
-streamlit run HR_query.py
+python -m streamlit run HR_query.py
 ```
 
 * UI opens at: [http://localhost:8501](http://localhost:8501)
